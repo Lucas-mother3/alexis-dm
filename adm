@@ -1,0 +1,123 @@
+#!/bin/bash
+echo "Welcome to Alexis Desktop Manager for Termux! (Type H for help)"
+read -p "Enter your display number/IP address: " screen
+
+if [ "$screen" == L ]
+then
+echo "Here's a list of sessions:
+1. Window Maker
+2. xterm
+3. User specific script"
+exit
+fi
+
+if [ "$screen" == H ]
+then
+echo "ADM command list:
+H - This prompt
+L - List all possible sessions
+A - About this Script
+K - Kill current session"
+exit
+fi
+
+if [ "$screen" == A ]
+then
+echo "Alexis Desktop Manager
+by Lucss21a
+©2022 by Lucss21a.
+Licensed under GNU General Public License version 3."
+exit
+fi
+
+if [ "$screen" == K ]
+then
+read -p "Which display?: " screen1
+vncserver -kill "$screen1"
+exit
+fi
+
+read -p "Enter your screen resolution (widthXheight): " screen_res
+
+if [ "$screen_res" == L ]
+then
+echo "Here's a list of sessions:
+1. Window Maker
+2. xterm
+3. User specific script"
+exit
+fi
+
+if [ "$screen_res" == H ]
+then
+echo "ADM command list:
+H - This prompt
+L - List all possible sessions
+A - About this Script
+K - Kill current session"
+exit
+fi                                                                                      
+if [ "$screen_res" == A ]
+then
+echo "Alexis Desktop Manager
+by Lucss21a
+©2022 by Lucss21a.
+Licensed under GNU General Public License version 3."
+exit
+fi
+
+if [ "$screen_res" == K ]
+then
+vncserver -kill "$screen"
+exit
+fi
+
+read -p "Please select a session: " session
+
+if [ "$session" == 1 ]
+then
+vncserver -name Wmaker -geometry "$screen_res"
+fi
+
+if [ "$session" == 2 ]
+then
+vncserver -name xterm -geometry "$screen_res" -xstartup ~/.vnc/xstartup2
+fi
+
+if [ "$session" == 3 ]
+then
+read -p "Where is your xstartup file?: " xstartup
+vncserver -name "My Desktop" -geometry "$screen_res" -xstartup $xstartup
+fi
+
+
+if [ "$session" == L ]
+then 
+echo "Here's a list of sessions:
+1. Window Maker
+2. xterm
+3. User specific script"
+fi
+
+if [ "$session" == H ]
+then
+echo "ADM command list:
+H - This prompt
+L - List all possible sessions
+A - About this Script
+K - Kill current session"
+fi
+
+if [ "$session" == A ]
+then
+echo "Alexis Desktop Manager
+by Lucss21a
+©2022 by Lucss21a.
+Licensed under GNU General Public License version 3."
+fi
+
+if [ "$session" == K ]
+then
+vncserver -kill "$screen"
+exit
+fi
