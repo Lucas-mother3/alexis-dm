@@ -5,7 +5,7 @@ read -p "Enter your display number/IP address: " screen
 if [ "$screen" == L ]
 then
 echo "Here's a list of sessions:
-1. Window Maker
+1. Put your DE here
 2. xterm
 3. User specific script"
 exit
@@ -42,7 +42,7 @@ read -p "Enter your screen resolution (widthXheight): " screen_res
 if [ "$screen_res" == L ]
 then
 echo "Here's a list of sessions:
-1. Window Maker
+1. Put your DE here
 2. xterm
 3. User specific script"
 exit
@@ -76,7 +76,7 @@ read -p "Please select a session: " session
 
 if [ "$session" == 1 ]
 then
-vncserver -name Wmaker -geometry "$screen_res"
+vncserver -name "Put your DE here" -geometry "$screen_res"
 fi
 
 if [ "$session" == 2 ]
@@ -94,7 +94,7 @@ fi
 if [ "$session" == L ]
 then 
 echo "Here's a list of sessions:
-1. Window Maker
+1. Put your DE here
 2. xterm
 3. User specific script"
 fi
