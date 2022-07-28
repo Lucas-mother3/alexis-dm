@@ -19,7 +19,7 @@ And it's only 5kb, compared to various desktop managers.
 
 ## How to use:
 
-1. Clone this repo
+1. Clone this repo or grab one at the [releases](https://github.com/Lucas-mother3/alexis-dm/releases) tab.
 2. Modify `adm` and replace all instances of `My desktop` with your desktop environment/window manager of choice
 3. Run `chmod a+x adm`
 4. Then open the script with `./adm`
