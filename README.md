@@ -1,10 +1,18 @@
 # Alexis Desktop Manager 
 A handy and minimal script for Termux X11.
 
+## How it works:
+
+It's written in Bourne Again Shell (Bash), which is compatible with most Linux distributions.
+
+It works by launching either `tigervnc` or makes a session from XServer XSDL. It can also support various window managers and desktop environments due to it's simplicity. 
+
+And it's only 4kb, compared to various desktop managers.
+
 ## How to use:
 
 1. Clone this repo
-2. Modify `adm` and replace all instances of `Put your DE here` with your desktop environment/window manager of choice
+2. Modify `adm` and replace all instances of `My desktop` with your desktop environment/window manager of choice
 3. Run `chmod a+x adm`
 4. Then open the script with `./adm`
 
@@ -12,4 +20,4 @@ A handy and minimal script for Termux X11.
 
 ## License
 
-This script is licensed under the GNU General Public License Version 3.0.
+This script is licensed under the GNU General Public License Version 3.0, since MIT License is technically not free.
