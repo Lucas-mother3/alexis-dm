@@ -1,4 +1,22 @@
 #!/bin/bash
+#
+#    Alexis Desktop Manager - A Bash based desktop manager for Termux and Termux Proot
+#    Copyright (C) 2022 Alexis Jhon Gaspar.
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see https://www.gnu.org/licenses/gpl-3.0. 
+
+
 echo "Welcome to Alexis Desktop Manager for Termux! (Type H for help)"
 read -p "VNC or XServer?: " xorgorvnc
 
@@ -10,7 +28,6 @@ If VNC:
 1. My desktop
 2. xterm
 3. User specific script
-
 If XServer XSDL:
 1. My desktop
 2. xterm
