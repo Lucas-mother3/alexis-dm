@@ -56,8 +56,8 @@ XServer is untested.
 - Void Linux
 
 ## Contributors
-
-- [@Damaj301damaj](https://github.com/Damaj301damaj-lol): Rewrite the script to case for much smaller file size and lines of code. (60 sloc with rewrite vs 353 sloc without rewrite)
+- [@Lucas-mother3](https://github.com/Lucas-mother3): That's me, the creator of the script.
+- [@Damaj301damaj-lol](https://github.com/Damaj301damaj-lol): Rewrite the script to case for much smaller file size and lines of code. (60 sloc with rewrite vs 353 sloc without rewrite)
 
 ## License
 
