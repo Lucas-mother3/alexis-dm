@@ -26,6 +26,32 @@ And it's only 4kb, compared to various desktop managers.
 
 (Optional) 5. Put `adm` in `$PREFIX/usr/local/bin`.
 
+## Compatibility with Linux environments in `proot-distro`
+
+### Ubuntu 22.04 LTS (and possibly older versions) 
+
+The xstartup option of `vncserver` will work only if you use the executable of the program, and not it's xstartup file. 
+XServer will work however. 
+
+### Termux (with the X11 repo) 
+
+Will work normally with the xstartup file. 
+XServer will probably work with the script. 
+
+### Arch Linux
+
+I couldn't figure out how to get vncserver working, so if you have any ideas, please let me know. 
+XServer is untested. 
+
+### Untested:
+
+- Alpine Linux
+- Debian 
+- Fedora
+- Manjaro
+- OpenSUSE
+- Void Linux
+
 ## License
 
 This script is licensed under the GNU General Public License Version 3.0, since MIT License is technically not free.
