@@ -55,6 +55,10 @@ XServer is untested.
 - OpenSUSE
 - Void Linux
 
+## Contributors
+
+- [@Damaj301damaj](https://github.com/Damaj301damaj-lol): Rewrite the script to case for much smaller file size and lines of code. (60 sloc with rewrite vs 353 sloc without rewrite)
+
 ## License
 
 This script is licensed under the GNU General Public License Version 3.0, since MIT License is technically not free.
