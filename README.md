@@ -3,7 +3,7 @@ A handy and minimal script for Termux X11.
 
 ## How it works:
 
-It's written in Bourne Again Shell (Bash), which is compatible with most Linux distributions.
+It's written in Bourne Again Shell (`Bash`), which is included with most Linux distributions, and compatible with various shells like Z Shell (`zsh`). 
 
 It works by launching either `tigervnc` or makes a session from XServer XSDL. It can also support various window managers and desktop environments due to it's simplicity. 
 
