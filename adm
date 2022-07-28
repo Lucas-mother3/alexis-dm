@@ -1,240 +1,36 @@
 #!/bin/bash
-#
-#    Alexis Desktop Manager - A Bash based desktop manager for Termux and Termux Proot
-#    Copyright (C) 2022 Alexis Jhon Gaspar.
-#
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
-#    (at your option) any later version.
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU General Public License for more details.
-#
-#    You should have received a copy of the GNU General Public License
-#    along with this program.  If not, see https://www.gnu.org/licenses/gpl-3.0. 
-
+# 
+# Alexis Desktop Manager - A Bash based desktop manager for Termux and Termux Proot 
+# Copyright (C) 2022 Alexis Jhon Gaspar. 
+# 
+# This program is free software: you can redistribute it and/or modify 
+# it under the terms of the GNU General Public License as published by 
+# the Free Software Foundation, either version 3 of the License, or 
+# (at your option) any later version. 
+# 
+# This program is distributed in the hope that it will be useful, 
+# but WITHOUT ANY WARRANTY; without even the implied warranty of 
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
+# GNU General Public License for more details. 
+# 
+# You should have received a copy of the GNU General Public License # along with this program. If not, see https://www.gnu.org/licenses/gpl-3.0.
 
 echo "Welcome to Alexis Desktop Manager for Termux! (Type H for help)"
-read -p "VNC or XServer?: " xorgorvnc
+read -p "Enter an option " screen
 
-if [ "$xorgorvnc" == L ]
-then
-# Replace "My desktop" to your own desktop enviroment or window manager
-echo "Here's a list of sessions:
-If VNC:
-1. My desktop
-2. xterm
-3. User specific script
-If XServer XSDL:
-1. My desktop
-2. xterm
-3. User specific xinitrc"
+case "$screen" in
+	L) printf "Here's a list of sessions:" \n "1. Put your DE here" \n "2. xterm" \n "3. User specific script" ; exit ;;
+	H) echo "ADM command list" \n "H - This prompt" \n "L - List all possible sessions" \n "A - About this Script" \n "K - kill current session" \n "S - Setup" ; exit ;;
+	A) echo " Alexis Desktop Manager" \n "by Lucss21a, improved by Damaj30Damaj" \n "©2022 by Lucss21a." \n "Licensed Under the GNU GPL v3." ; exit ;;
+        K) echo "Which display?:" ; read -r screen1 ; vncserver -kill "$screen1" ; exit ;;
+	S) echo "Enter your screen resolution (widthXheight): " ; read -r screen_res ; echo "Please select a session: " ; read -r session ;;
+	*) printf "Invalid Input!, write H for help";;
+esac
+
+case "$session" in
+	1) vncserver -name "Put your DE here" -geometry "$screen_res" ;;
+	2) vncserver -name xterm -geometry "$screen_res" -xstartup ~/.vnc/xstartup2 ;;
+	3) printf "Where is your xstartup file" ; read -r xstartup ; vncserver -name "My Desktop" -geometry "$screen_res" -xstartup $xstartup ;;
+	*) printf "Invalid Output!" ;;
+esac 
 exit
-fi
-
-if [ "$xorgorvnc" == H ]
-then
-echo "ADM command list:
-H - This prompt
-L - List all possible sessions
-A - About this Script"
-exit
-fi
-
-if [ "$xorgorvnc" == A ]
-then
-echo "Alexis Desktop Manager
-by Lucss21a
-©2022 by Lucss21a.
-Licensed under GNU General Public License version 3."
-exit
-fi
-
-if [ "$xorgorvnc" == 1 ]
-then
-read -p "Enter your display number/IP address: " screen
-
-
-if [ "$screen" == L ]
-then
-echo "Here's a list of sessions:
-1. My desktop
-2. xterm
-3. User specific script"
-exit
-fi
-
-if [ "$screen" == H ]
-then
-echo "ADM command list:
-H - This prompt
-L - List all possible sessions
-A - About this Script
-K - Kill current session"
-exit
-fi
-
-if [ "$screen" == A ]
-then
-echo "Alexis Desktop Manager
-by Lucss21a
-©2022 by Lucss21a.
-Licensed under GNU General Public License version 3."
-exit
-fi
-
-if [ "$screen" == K ]
-then
-read -p "Which display?: " screen1
-vncserver -kill "$screen1"
-exit
-fi
-
-read -p "Enter your screen resolution (widthXheight): " screen_res
-
-if [ "$screen_res" == L ]
-then
-echo "Here's a list of sessions:
-1. My desktop
-2. xterm
-3. User specific script"
-exit
-fi
-
-if [ "$screen_res" == H ]
-then
-echo "ADM command list:
-H - This prompt
-L - List all possible sessions
-A - About this Script
-K - Kill current session"
-exit
-fi
-if [ "$screen_res" == A ]
-then
-echo "Alexis Desktop Manager
-by Lucss21a
-©2022 by Lucss21a.
-Licensed under GNU General Public License version 3."
-exit
-fi
-
-if [ "$screen_res" == K ]
-then
-vncserver -kill "$screen"
-exit
-fi
-
-read -p "Please select a session: " session
-
-if [ "$session" == 1 ]
-then
-#On Ubuntu via proot, replace "myde" with the executable of the enviroment, like for example, dwm
-#On Termux itself, replace "myde" with your own xstartup file.
-#The script might not work on other distros available on proot-distro, so make an issue on GitHub.
-vncserver -name "My desktop" -geometry "$screen_res" -xstartup myde
-fi
-
-if [ "$session" == 2 ]
-then
-vncserver -name xterm -geometry "$screen_res" -xstartup xterm
-fi
-
-if [ "$session" == 3 ]
-then
-read -p "Where is your xstartup file?: " xstartup
-vncserver -name "My Desktop" -geometry "$screen_res" -xstartup $xstartup
-fi
-
-if [ "$session" == L ]
-then
-echo "Here's a list of sessions:
-1. My desktop
-2. xterm
-3. User specific script"
-fi
-
-if [ "$session" == H ]
-then
-echo "ADM command list:
-H - This prompt
-L - List all possible sessions
-A - About this Script
-K - Kill current session"
-fi
-
-if [ "$session" == A ]
-then
-echo "Alexis Desktop Manager
-by Lucss21a
-©2022 by Lucss21a.
-Licensed under GNU General Public License version 3."
-fi
-
-if [ "$session" == K ]
-then
-vncserver -kill "$screen"
-exit
-fi
-fi
-
-
-if [ "$xorgorvnc" == 2 ]
-then
-
-read -p "Where's the X server? (default 192.168.43.250:0): " screen
-read -p "Where's the PulseAudio server? (default tcp:192.168.43.250:4713): " audio
-read -p "Please select a session: " session
-
-if [ "$session" == 1 ]
-then
-export DISPLAY=$screen
-export PULSE_SERVER=$audio
-#Remember to change this section if you want to use XServer XSDL instead of VNC, which has an extra benefit of running a PulseAudio server without configuration.
-#This might work if the VNC server crashed a lot of times and you don't have time troubleshooting it.
-myde
-fi
-
-if [ "$session" == 2 ]
-then
-export DISPLAY=$screen
-export PULSE_SERVER=$audio
-xterm
-fi
-
-if [ "$session" == 3 ]
-then
-read -p "Where is your .xinitrc file?: " xinit
-export DISPLAY=$screen
-export PULSE_SERVER=$audio
-$xinit
-fi
-
-if [ "$session" == L ]
-then
-echo "Here's a list of sessions:
-1. My desktop
-2. xterm
-3. User specific xinitrc"
-fi
-
-if [ "$session" == H ]
-then
-echo "ADM command list:
-H - This prompt
-L - List all possible sessions
-A - About this Script
-^C (Ctrl+C) - Kills current session"
-fi
-
-if [ "$session" == A ]
-then
-echo "Alexis Desktop Manager
-by Lucss21a
-©2022 by Lucss21a.
-Licensed under GNU General Public License version 3."
-fi
-fi
