@@ -1,3 +1,13 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)"
+          media="(min-width: 800px)"
+          srcset="https://raw.githubusercontent.com/Lucas-mother3/alexis-dm/main/logo/adm_white.png">
+  <source media="(prefers-color-scheme: light)"
+          media="(min-width: 800px)
+          srcset="https://raw.githubusercontent.com/Lucas-mother3/alexis-dm/main/logo/adm_black.png">
+  <img alt="ADM logo, which uses a modified version of the Screen Preferences icon from Haiku OS." src="https://raw.githubusercontent.com/Lucas-mother3/alexis-dm/main/logo/adm_icon_black.png" width="640">
+</picture>
+
 # Alexis Desktop Manager 
 A handy and minimal script for Termux X11.
 
