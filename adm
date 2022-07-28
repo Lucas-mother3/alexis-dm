@@ -38,6 +38,7 @@ fi
 if [ "$xorgorvnc" == H ]
 then
 echo "ADM command list:
+G - View the GPLv3 License
 H - This prompt
 L - List all possible sessions
 A - About this Script"
@@ -50,6 +51,15 @@ echo "Alexis Desktop Manager
 by Lucss21a
 ©2022 by Lucss21a.
 Licensed under GNU General Public License version 3."
+exit
+fi
+
+if [ "$xorgorvnc" == G ]
+then
+echo "Now downloading the GPLv3 License."
+curl -s https://www.gnu.org/licenses/gpl-3.0.txt >> COPYING
+vim COPYING
+rm COPYING
 exit
 fi
 
@@ -70,6 +80,7 @@ fi
 if [ "$screen" == H ]
 then
 echo "ADM command list:
+G - View the GPLv3 License
 H - This prompt
 L - List all possible sessions
 A - About this Script
@@ -93,6 +104,15 @@ vncserver -kill "$screen1"
 exit
 fi
 
+if [ "$screen" == G ]
+then
+echo "Now downloading the GPLv3 License."
+curl -s https://www.gnu.org/licenses/gpl-3.0.txt >> COPYING
+vim COPYING
+rm COPYING
+exit
+fi
+
 read -p "Enter your screen resolution (widthXheight): " screen_res
 
 if [ "$screen_res" == L ]
@@ -107,6 +127,7 @@ fi
 if [ "$screen_res" == H ]
 then
 echo "ADM command list:
+G - View the GPLv3 License
 H - This prompt
 L - List all possible sessions
 A - About this Script
@@ -125,6 +146,15 @@ fi
 if [ "$screen_res" == K ]
 then
 vncserver -kill "$screen"
+exit
+fi
+
+if [ "$screen_res" == G ]
+then
+echo "Now downloading the GPLv3 License."
+curl -s https://www.gnu.org/licenses/gpl-3.0.txt >> COPYING
+vim COPYING
+rm COPYING
 exit
 fi
 
@@ -160,6 +190,7 @@ fi
 if [ "$session" == H ]
 then
 echo "ADM command list:
+G - View the GPLv3 License
 H - This prompt
 L - List all possible sessions
 A - About this Script
@@ -179,6 +210,16 @@ then
 vncserver -kill "$screen"
 exit
 fi
+
+if [ "$session" == G ]
+then
+echo "Now downloading the GPLv3 License."
+curl -s https://www.gnu.org/licenses/gpl-3.0.txt >> COPYING
+vim COPYING
+rm COPYING
+exit
+fi
+
 fi
 
 
@@ -186,7 +227,99 @@ if [ "$xorgorvnc" == 2 ]
 then
 
 read -p "Where's the X server? (default 192.168.43.250:0): " screen
+
+if [ "$screen" == L ]
+then
+echo "Here's a list of sessions:
+1. My desktop
+2. xterm
+3. User specific xinitrc"
+exit
+fi
+
+if [ "$screen" == H ]
+then
+echo "ADM command list:
+G - View the GPLv3 License
+H - This prompt
+L - List all possible sessions
+A - About this Script
+^C (Ctrl+C) - Kills current session"
+exit
+fi
+
+if [ "$screen" == A ]
+then
+echo "Alexis Desktop Manager
+by Lucss21a
+©2022 by Lucss21a.
+Licensed under GNU General Public License version 3."
+exit
+fi
+
+if [ "$screen" == K ]
+then
+read -p "Which display?: " screen1
+vncserver -kill "$screen1"
+exit
+fi
+
+if [ "$screen" == G ]
+then
+echo "Now downloading the GPLv3 License."
+curl -s https://www.gnu.org/licenses/gpl-3.0.txt >> COPYING
+vim COPYING
+rm COPYING
+exit
+fi
+
 read -p "Where's the PulseAudio server? (default tcp:192.168.43.250:4713): " audio
+
+if [ "$audio" == L ]
+then
+echo "Here's a list of sessions:
+1. My desktop
+2. xterm
+3. User specific xinitrc"
+exit
+fi
+
+if [ "$audio" == H ]
+then
+echo "ADM command list:
+G - View the GPLv3 License
+H - This prompt
+L - List all possible sessions
+A - About this Script
+^C (Ctrl+C) - Kills current session"
+exit
+fi
+
+if [ "$audio" == A ]
+then
+echo "Alexis Desktop Manager
+by Lucss21a
+©2022 by Lucss21a.
+Licensed under GNU General Public License version 3."
+exit
+fi
+
+if [ "$audio" == K ]
+then
+read -p "Which display?: " screen1
+vncserver -kill "$screen1"
+exit
+fi
+
+if [ "$audio" == G ]
+then
+echo "Now downloading the GPLv3 License."
+curl -s https://www.gnu.org/licenses/gpl-3.0.txt >> COPYING
+vim COPYING
+rm COPYING
+exit
+fi
+
 read -p "Please select a session: " session
 
 if [ "$session" == 1 ]
@@ -224,10 +357,20 @@ fi
 if [ "$session" == H ]
 then
 echo "ADM command list:
+G - View the GPLv3 License
 H - This prompt
 L - List all possible sessions
 A - About this Script
 ^C (Ctrl+C) - Kills current session"
+fi
+
+if [ "$session" == G ]
+then
+echo "Now downloading the GPLv3 License."
+curl -s https://www.gnu.org/licenses/gpl-3.0.txt >> COPYING
+vim COPYING
+rm COPYING
+exit
 fi
 
 if [ "$session" == A ]
