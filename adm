@@ -15,22 +15,50 @@
 # 
 # You should have received a copy of the GNU General Public License # along with this program. If not, see https://www.gnu.org/licenses/gpl-3.0.
 
+echo "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⣄⡀⠀⠀⠀⠀⠀⠀⢀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⡼⠛⠃⠀⠘⠛⠻⠿⣤⣤⣤⠟⠛⠛⠛⠻⢧⣤⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣶⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠿⣶⣤⣄⡀⠀⠀⠉⠙⠻⢿⣶⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠛⢳⣦⣴⣾⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⣶⣦⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠙⠛⠿⢶⣤⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⣿⣿⣿⣿⣿⣦⣄⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⣿⣿⣿⣿⣷⡸⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣀⠀⠀⠀⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⣿⣿⣿⣿⣿⣧⡸⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⣿⣿⣿⣿⡿⠋⣠⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠻⣿⣿⣿⣷⣾⣿⣿⠻⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠈⠿⢿⣿⣿⣿⣿⣶⣀⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠿⣷⣄⠀⠀⠀⠀⠀⠀⠈⠙⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⢷⣦⣄⡀⠀⠀⠀⠀⠀⠉⠉⠿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠻⠶⢦⣀⣀⠀⠀⠀⠀⠀⠉⠛⠻⢿⡇⠀⠀⠀⠀⠀⠀⣸⡿⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠛⠻⢧⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⠟⠃⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠿⣶⣄⠀⠀⠀⠀⠀⠀⠀⣰⣾⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠻⣦⣄⡀⢀⣼⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠛⠁"
 echo "Welcome to Alexis Desktop Manager for Termux! (Type H for help)"
-read -p "Enter an option " screen
+read -p "Enter an option: " screen
 
 case "$screen" in
-	L) printf "Here's a list of sessions:" \n "1. Put your DE here" \n "2. xterm" \n "3. User specific script" ; exit ;;
-	H) echo "ADM command list" \n "H - This prompt" \n "L - List all possible sessions" \n "A - About this Script" \n "K - kill current session" \n "S - Setup" ; exit ;;
-	A) echo " Alexis Desktop Manager" \n "by Lucss21a, improved by Damaj30Damaj" \n "©2022 by Lucss21a." \n "Licensed Under the GNU GPL v3." ; exit ;;
-        K) echo "Which display?:" ; read -r screen1 ; vncserver -kill "$screen1" ; exit ;;
-	S) echo "Enter your screen resolution (widthXheight): " ; read -r screen_res ; echo "Please select a session: " ; read -r session ;;
-	*) printf "Invalid Input!, write H for help";;
+	L) printf '%s\n%s\n' "Here's a list of sessions:" "1. Put your DE here" "2. xterm" "3. User specific xstartup/xinit" ; exit ;;
+	H) printf '%s\n%s\n' "ADM command list: " "G - View the GPLv3 License" "H - This prompt" "L - List all possible sessions" "A - About this Script" "K - Kill current VNC session" "V - VNC Setup" "X - XSDL setup" "Ctrl+C - Kill current XSDL session" ; exit ;;
+	A) printf '%s\n%s\n' "Alexis Desktop Manager" "by Lucss21a, improved by Damaj30Damaj" "©2022 by Lucss21a." "Licensed Under the GNU GPL v3." ; exit ;;
+        K) read -p "Which display?: " screen2 ; vncserver -kill "$screen2" ; exit ;;
+	V) read -p "Enter your screen resolution (widthXheight): " screen_res ; read -p "Please select a session: " session ;;
+	X) read -p "Where's the X server? (default 192.168.43.250:0): " screen1 ; read -p "Where's the PulseAudio server? (default tcp:192.168.43.250:4713): " audio ; read -p "Please select a session: " session1 ;;
+	G) echo "Now downloading the GPLv3 License." ; curl -s https://www.gnu.org/licenses/gpl-3.0.txt >> COPYING ; vim COPYING ; rm COPYING ;;
+	*) printf '%s\n' "Invalid Input!, write H for help" ; exit ;;
 esac
 
 case "$session" in
-	1) vncserver -name "Put your DE here" -geometry "$screen_res" ;;
-	2) vncserver -name xterm -geometry "$screen_res" -xstartup ~/.vnc/xstartup2 ;;
-	3) printf "Where is your xstartup file" ; read -r xstartup ; vncserver -name "My Desktop" -geometry "$screen_res" -xstartup $xstartup ;;
-	*) printf "Invalid Output!" ;;
+	1) vncserver -name "Put your DE here" -geometry "$screen_res" myde ;;
+	2) vncserver -name xterm -geometry "$screen_res" -xstartup xterm ;;
+	3) read -p "Where is your xstartup file?: " xstartup ; vncserver -name "My Desktop" -geometry "$screen_res" -xstartup $xstartup ;;
 esac 
+exit
+
+case "$session1" in
+        1) export DISPLAY="$screen1" ; export PULSE_SERVER="$audio" ; myde ;;
+        2) export DISPLAY="$screen1" ; export PULSE_SERVER="$audio" ; xterm ;;
+        3) read -p "Where is your .xinitrc file?: " xinit ; export DISPLAY="$screen1" ; export PULSE_SERVER="$audio" ; "$xinit" ;;
+esac
 exit
