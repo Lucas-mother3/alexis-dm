@@ -36,7 +36,10 @@ XServer will work however.
 ### Termux (with the X11 repo) 
 
 Will work normally with the xstartup file. 
+
 XServer will probably work with the script. 
+
+Note: Use `aterm` instead of `xterm`. 
 
 ### Arch Linux
 
