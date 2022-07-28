@@ -1,8 +1,20 @@
 <picture>
   <source media="(prefers-color-scheme: dark)"
-          srcset="https://raw.githubusercontent.com/Lucas-mother3/alexis-dm/main/logo/adm_white.png, 640w">
+          srcset="
+          https://raw.githubusercontent.com/Lucas-mother3/alexis-dm/main/logo/adm_white_320.png, 537w
+          https://raw.githubusercontent.com/Lucas-mother3/alexis-dm/main/logo/adm_white_640.png, 1074w,
+          https://raw.githubusercontent.com/Lucas-mother3/alexis-dm/main/logo/adm_white.png, 2148w">
+          sizes="(max-width: 720px) 537px,
+                 (max-width: 1280px) 1074px,
+                 (max-width: 2560px) 2148px">
   <source media="(prefers-color-scheme: light)"
-          srcset="https://raw.githubusercontent.com/Lucas-mother3/alexis-dm/main/logo/adm_black.png, 640w">
+          srcset="
+          https://raw.githubusercontent.com/Lucas-mother3/alexis-dm/main/logo/adm_black_320.png, 537w
+          https://raw.githubusercontent.com/Lucas-mother3/alexis-dm/main/logo/adm_black_640.png, 1074w,
+          https://raw.githubusercontent.com/Lucas-mother3/alexis-dm/main/logo/adm_black.png, 2148w">
+          sizes="(max-width: 640px) 537px,
+                 (max-width: 1280px) 1074px,
+                 (max-width: 1920px) 2148px">
   <img alt="ADM logo, which uses a modified version of the Screen Preferences icon from Haiku OS." src="https://raw.githubusercontent.com/Lucas-mother3/alexis-dm/main/logo/adm_icon_black.png" width="640">
 </picture>
 
