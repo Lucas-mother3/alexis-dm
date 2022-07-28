@@ -15,7 +15,7 @@ It's written in Bourne Again Shell (`Bash`), which is included with most Linux d
 
 It works by launching either `tigervnc` or makes a session from XServer XSDL. It can also support various window managers and desktop environments due to it's simplicity. 
 
-And it's only 4kb, compared to various desktop managers.
+And it's only 5kb, compared to various desktop managers.
 
 ## How to use:
 
