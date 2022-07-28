@@ -4,7 +4,7 @@
           https://raw.githubusercontent.com/Lucas-mother3/alexis-dm/main/logo/adm_white_320.png, 537w
           https://raw.githubusercontent.com/Lucas-mother3/alexis-dm/main/logo/adm_white_640.png, 1074w,
           https://raw.githubusercontent.com/Lucas-mother3/alexis-dm/main/logo/adm_white.png, 2148w">
-          sizes="(max-width: 720px) 537px,
+          sizes="(max-width: 640px) 537px,
                  (max-width: 1280px) 1074px,
                  (max-width: 2560px) 2148px">
   <source media="(prefers-color-scheme: light)"
