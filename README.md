@@ -29,3 +29,5 @@ And it's only 4kb, compared to various desktop managers.
 ## License
 
 This script is licensed under the GNU General Public License Version 3.0, since MIT License is technically not free.
+
+This is free software, so I can fuck off with companies. 
