@@ -24,7 +24,7 @@ And it's only 5kb, compared to various desktop managers.
 3. Run `chmod a+x adm`
 4. Then open the script with `./adm`
 
-(Optional) 5. Put `adm` in `$PREFIX/usr/local/bin`.
+(Optional) 5. Put `adm` in `/usr/local/bin` or `/data/data/com.termux/files/usr/local/bin`.
 
 ## Compatibility with Linux environments in `proot-distro`
 
