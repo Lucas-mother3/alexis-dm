@@ -3,7 +3,7 @@
           srcset="https://raw.githubusercontent.com/Lucas-mother3/alexis-dm/main/logo/adm_white_320.png">
   <source media="(prefers-color-scheme: light)"
           srcset="https://raw.githubusercontent.com/Lucas-mother3/alexis-dm/main/logo/adm_black_320.png">
-  <img alt="ADM logo, which uses a modified version of the Screen Preferences icon from Haiku OS." src="https://raw.githubusercontent.com/Lucas-mother3/alexis-dm/main/logo/adm_icon_black.png" width="320">
+  <img alt="ADM logo, which uses a modified version of the Screen Preferences icon from Haiku OS." src="https://raw.githubusercontent.com/Lucas-mother3/alexis-dm/main/logo/adm_black.png" width="320">
 </picture>
 
 # Alexis Desktop Manager 
