@@ -28,32 +28,7 @@ And it's only 5kb, compared to various desktop managers.
 
 ## Compatibility with Linux environments in `proot-distro`
 
-### Ubuntu 22.04 LTS (and possibly older versions) 
-
-The xstartup option of `vncserver` will work only if you use the executable of the program, and not it's xstartup file. 
-XServer will work however. 
-
-### Termux (with the X11 repo) 
-
-Will work normally with the xstartup file. 
-
-XServer will probably work with the script. 
-
-Note: Use `aterm` instead of `xterm`. 
-
-### Arch Linux
-
-I couldn't figure out how to get vncserver working, so if you have any ideas, please let me know. 
-XServer is untested. 
-
-### Untested:
-
-- Alpine Linux
-- Debian 
-- Fedora
-- Manjaro
-- OpenSUSE
-- Void Linux
+Now moved to the [wiki](https://github.com/Lucas-mother3/alexis-dm/wiki).
 
 ## Contributors
 - [@Lucas-mother3](https://github.com/Lucas-mother3): That's me, the creator of the script.
