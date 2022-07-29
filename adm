@@ -45,7 +45,7 @@ case "$screen" in
 	A) printf '%s\n%s\n' "Alexis Desktop Manager" "by Lucss21a, improved by Damaj30Damaj" "©2022 by Lucss21a." "Licensed Under the GNU GPL v3." ; exit ;;
         K) read -p "Which display?: " screen2 ; vncserver -kill "$screen2" ; exit ;;
 	V) read -p "Enter your screen resolution (widthXheight): " screen_res ; read -p "Please select a session: " session ;;
-	X) read -p "Where's the X server? (default 192.168.43.250:0): " screen1 ; read -p "Where's the PulseAudio server? (default tcp:192.168.43.250:4713): " audio ; read -p "Please select a session: " session1 ;;
+	X) read -p "Where's the X server? (default x.x.x.x:0): " screen1 ; read -p "Where's the PulseAudio server? (default tcp:x.x.x.x:4713): " audio ; read -p "Please select a session: " session1 ;;
 	G) echo "Now downloading the GPLv3 License." ; curl -s https://www.gnu.org/licenses/gpl-3.0.txt >> COPYING ; vim COPYING ; rm COPYING ;;
 	*) printf '%s\n' "Invalid Input!, write H for help" ; exit ;;
 esac
